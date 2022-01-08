@@ -47,6 +47,3 @@ function Home() {
   );
 }
 
-export default Home;
-© 2022 GitHub, Inc.
-Terms
