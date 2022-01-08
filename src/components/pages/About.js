@@ -3,6 +3,8 @@ import React from "react";
 
 function About() {
   return <p>About Page</p>;
+  <p> The Acronym CRUD stands for create, read, update and delete 
+  </p>
   // <div className="grid place-content-center h-screen ">
   //   <div className="grid grid-cols-12 shadow-xl p-4 bg-accent text-dark rounded-md">
   //     Meyazhagan
