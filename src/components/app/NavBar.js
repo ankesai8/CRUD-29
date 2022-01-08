@@ -25,8 +25,8 @@ function NavBar() {
 
   return (
     <>
-      <div className="flex w-full py-6 fixed bg-alpha shadow-lg backdrop-filter backdrop-blur-xl z-10 md:justify-around justify-start">
-        <div className="font-oleo text-3xl ml-6 md:mx-0">User and Profile</div>
+      <div className="flex w-full py-6 fixed bg-alpha shadow-lg backdrop-filter backdrop-blur-xl z-10 md:justify-around justify-center">
+        <div className="font-oleo text-3xl ml-6 md:mx-0">DASHBOARD</div>
         <div className="hidden md:flex md:gap-10">
           {navItems.map((nav, index) => (
             <MyNavLink {...nav} key={index} classes="font-bold text-md" />
