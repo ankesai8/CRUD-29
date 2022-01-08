@@ -8,9 +8,9 @@ function Home() {
           Create Using{" "}
         </p>
         <div className="p-4">
-          {["React", "JavaSCript","HTML", "CSS"].map((item) => (
+          {["React", "HTML", "CSS"].map((item) => (
             <div className="flex gap-4 text-lg items-center">
-              <span className="text--600 w-10">
+              <span className="text-green-600 w-10">
                 <svg
                   viewBox="0 0 16 16"
                   fill="currentColor"
@@ -27,7 +27,7 @@ function Home() {
           Implemented{" "}
         </p>
         <div className="p-4">
-          {["CRUD Operations", "Routing"].map((item) => (
+          {["CRUD Operations","JS", "Routing"].map((item) => (
             <div className="flex gap-4 text-lg items-center">
               <span className="text-yellow-600 w-10">
                 <svg
@@ -48,3 +48,5 @@ function Home() {
 }
 
 export default Home;
+© 2022 GitHub, Inc.
+Terms
