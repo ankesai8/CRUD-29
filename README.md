@@ -1,3 +1,1 @@
-# User and Profile Day 29
-
-Deployed Link [Click Here](https://user-and-profile-crud-day-29.netlify.app/)
+# [Click Here](https://29-crud.netlify.app/) for Deployed Link
