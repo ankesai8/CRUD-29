@@ -8,7 +8,7 @@ function Home() {
           Create Using{" "}
         </p>
         <div className="p-4">
-          {["React", "HTML", "CSS"].map((item) => (
+          {["React", "React Router", "Tailwind CSS"].map((item) => (
             <div className="flex gap-4 text-lg items-center">
               <span className="text-green-600 w-10">
                 <svg
@@ -27,7 +27,7 @@ function Home() {
           Implemented{" "}
         </p>
         <div className="p-4">
-          {["CRUD Operations","JS", "Routing"].map((item) => (
+          {["CRUD Operations", "Routing"].map((item) => (
             <div className="flex gap-4 text-lg items-center">
               <span className="text-yellow-600 w-10">
                 <svg
@@ -47,3 +47,4 @@ function Home() {
   );
 }
 
+export default Home;    
