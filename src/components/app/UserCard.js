@@ -21,13 +21,7 @@ function UserCard(props) {
             alt={name}
           />
           <div className="flex flex-col mx-auto justify-evenly flex-shrink-0 ">
-            <IconButton
-              src={`/icons/heart-${liked ? "filled" : "outlined"}.svg`}
-              onClick={() => {
-                setLiked((l) => !l);
-              }}
-              tooltip={!liked ? "Like" : "Unlike"}
-            />
+            
             <IconButton
               src={"/icons/profile.svg"}
               onClick={() => navigate(`/profile/${id}`)}
