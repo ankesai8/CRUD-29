@@ -1,25 +1,29 @@
 export const skillOptions = [
-  "HTML",
-  "CSS",
+  "JAVA",
+  "C",
   "JS",
-  "REACT",
+  "C++",
   "NODE JS",
   "EXPRESS",
   "MONGODB",
-  "MONGOOSE",
+  "NOSQL",
   "MYSQL",
   "AWS",
+  "SYSTEM DESIGN",
+  "REACT",
 ];
 export const roleOptions = [
+  "PLACEMENT TEAM",
+  "CODER",
   "STUDENT",
   "MENTOR",
-  "EVENT MANAGER",
-  "PLACEMENT TEAM",
+  "COORDINATOR",
+  "DEVOLOPER"
 ];
 
 export const validate = (value) => {
   const errors = {};
-  if (value.skill?.length < 3) errors.skill = "Select at least three item";
-  else if (value.role?.length <= 0) errors.role = "Select a role";
+  if (value.skill?.length < 2) errors.skill = "Select at least 2 skills";
+  else if (value.role?.length <= 0) errors.role = "Please Select Role";
   return errors;
 };
