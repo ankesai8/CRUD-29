@@ -8,9 +8,9 @@ function Home() {
           Create Using{" "}
         </p>
         <div className="p-4">
-          {["React", "React Router", "Tailwind CSS"].map((item) => (
+          {["React", "JavaSCript","HTML", "CSS"].map((item) => (
             <div className="flex gap-4 text-lg items-center">
-              <span className="text-green-600 w-10">
+              <span className="text--600 w-10">
                 <svg
                   viewBox="0 0 16 16"
                   fill="currentColor"
