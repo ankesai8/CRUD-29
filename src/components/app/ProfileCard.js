@@ -3,17 +3,7 @@ import { useNavigate, useParams } from "react-router";
 import IconButton from "../common/IconButton";
 
 const Tag = ({ children }) => {
-  return (
-    <div
-      className="text-accent uppercase
-    m-1 text-xs border-2 
-    border-accent rounded-md 
-    py-1 px-3 w-min
-    hover:bg-accent hover:text-dark"
-    >
-      {children}
-    </div>
-  );
+  return (<div className="text-accent uppercase m-1 text-xs border-2 border-accent rounded-md py-1 px-3 w-min hover:bg-accent hover:text-dark">{children}</div>);
 };
 
 function ProfileCard(props) {
@@ -24,36 +14,15 @@ function ProfileCard(props) {
   if (skill?.length <= 0 || role?.length <= 0)
     return (
       <div className="flex justify-start p-6">
-        <button
-          onClick={() => {
-            navigate(`/create-profile/${userId}`);
-          }}
-          className="flex gap-2 
-          capitalize
-          border-2 border-accent 
-          text-accent 
-          py-2 px-4 rounded-md 
-          hover:bg-accent hover:text-dark"
-        >
-          Create New Profile
-        </button>
+        <button onClick={() => { navigate(`/create-profile/${userId}`); }} 
+        className="flex gap-2 capitalize border-2 border-accent text-accent py-2 px-4 rounded-md hover:bg-accent hover:text-dark" > Create New Profile </button>
       </div>
     );
 
   return (
-    <div
-      className="w-full
-    grid grid-cols-6 lg:grid-cols-10 gap-5 
-    bg-alpha rounded-xl p-6 
-    lg:p-4 lg:gap-0 lg:mx-1 
-    lg:place-content-center"
-    >
+    <div className="w-full grid grid-cols-6 lg:grid-cols-10 gap-5 bg-alpha rounded-xl p-6 lg:p-4 lg:gap-0 lg:mx-1 lg:place-content-center" >
       <div className="col-span-2 lg:col-span-1 lg:self-center">
-        <img
-          src={avatar}
-          className="h-24 w-24 object-cover rounded-xl"
-          alt={name}
-        />
+        <img src={avatar} className="h-24 w-24 object-cover rounded-xl" alt={name} />
       </div>
       <div className="lg:justify-self-start p-4 col-span-4 lg:col-span-3 ">
         <div className="text-xl text-center uppercase text-light font-bold  truncate">
