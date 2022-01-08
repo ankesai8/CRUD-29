@@ -7,7 +7,7 @@ import IconButton from "../common/IconButton";
 function UserCard(props) {
   const { avatar, name, email, id, onDelete, phone, location, classes } = props;
 
-  const [liked, setLiked] = useState(false);
+ 
   // const history = useHistory();
   const navigate = useNavigate();
 
