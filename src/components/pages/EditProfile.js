@@ -1,10 +1,6 @@
 import React from "react";
 import { useNavigate, useParams } from "react-router";
-import {
-  skillOptions,
-  roleOptions,
-  validate,
-} from "../../Data/ProfileServices";
+import {skillOptions,roleOptions,validate,} from "../../Data/ProfileServices";
 import SelectForm from "../common/SelectForm";
 
 function CreateProfile({ onUpdate, getUser }) {
@@ -22,21 +18,10 @@ function CreateProfile({ onUpdate, getUser }) {
   };
   return (
     <div className="w-md">
-      <SelectForm
-        selectList={[
-          {
-            label: "Skill",
-            multiple: true,
-            listItems: skillOptions,
-            field: "skill",
-          },
-          {
-            label: "Role",
-            multiple: false,
-            listItems: roleOptions,
-            field: "role",
-          },
-        ]}
+      <SelectFormselectList={[
+    { label: "Skill", multiple: true, listItems: skillOptions, field: "skill", },
+    { label: "Role", multiple: false, listItems: roleOptions, field: "role", },
+      ]}
         submitText="Edit"
         initialValue={{ skill: user.skill, role: user.role }}
         validator={validate}
